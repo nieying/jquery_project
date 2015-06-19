@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>用户中心</title>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+<script src="../../../js/lab/jquery-1.8.3.min.js"></script>
+<script src="../../../js/lab/jquery.validate.min.js"></script>
+<script src="../../../js/common.js"></script>
+</head>
+
+<body class="bg-fa">
+    <!--头部-->
+    <div id="header">
+        <!--顶部栏-->
+        <div class="top-bar com-width mao fix">
+            <div class="left-area sns fl">
+                关注我们
+                <a href="" class="weibo dib vm mr10 ml10"></a>
+                <a href="" class="weixin dib vm"></a>
+            </div>
+            <div class="right-area fr">
+                <!--非登录-->
+                <a href="" title="" class="dib">立即注册</a> |
+                <a href="" title="" class="dib">登录</a>
+                <!--登录-->
+                <span class="dib">欢迎您：你妹啊</span> |
+                <a href="" title="" class="dib mr35">进入个人中心</a>
+                <a href="" title="" class="dib exit c-14">退出</a>
+            </div>
+        </div>
+        <!--导航-->
+        <div class="nav-outer w100">
+            <div class="nav-box com-width mao fix">
+                <a class="logo dib fl" href="http://www.chuguofeng.com"><img class="vm" src="../../../images/logo_w.png" alt="出国风"></a>
+                <ul class="nav fix fl ml70">
+                    <li><a href="" title="">首页</a></li>
+                    <li><a href="" title="">精品项目</a></li>
+                    <li><a href="" title="">移民公司</a></li>
+                    <li><a href="" title="">移民招投标</a></li>
+                    <li><a href="" title="">活动展会</a></li>
+                </ul>
+                <div class="fr rel">
+                    <input class="search bgw" type="text" id="" value="" placeholder="搜索">
+                    <i class="search-icon abs"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--主体-->
+    <div id="wrap" class="fix com-width mao">
+        <!--左边栏-->
+        <div class="left-bar mt40 fl">
+            <div class="user-info block tc ">
+                <div class="head-pic mao">
+                    <img src="../../../images/head_pic.png" alt="">
+                </div>
+                <p class="lh20 mt20">HI 早上好</p>
+                <p class="lh20">15800005555</p>
+                <div class="user-state mt10">
+                    <!--电话验证-->
+                    <i class="dib phone-check"></i>
+                    <!--邮箱验证-->
+                    <i class="dib mail-check"></i>
+                    <!--设置-->
+                    <i class="dib setup"></i>
+                </div>
+            </div>
+            <ul class="main-nav block mt10">
+                <li class="rel">
+                    <div class="r-arr"><i></i></div>
+                    <a href="javascript:void(0);" class="nav-tit b bo-line">个人信息</a>
+                    <ul>
+                        <li class=""><a href="" class="selected">账号资料</a></li>
+                        <li class="bo-line"><a href="">业务资料</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <div class="r-arr"><i></i></div>
+                    <a href="javascript:void(0);" class="nav-tit b bo-line">消息中心</a>
+                    <ul>
+                        <li><a href="">会话</a></li>
+                        <li><a href="">报名的活动</a></li>
+                        <li class="bo-line"><a href="">顾问列表</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <div class="r-arr"><i></i></div>
+                    <a href="" class="nav-tit b bo-line">我的招标</a>
+                </li>
+                <li class="rel">
+                    <div class="r-arr"><i></i></div>
+                    <a href="javascript:void(0);" class="nav-tit b">我的收藏</a>
+                    <ul>
+                        <li><a href="">所有收藏</a></li>
+                        <li><a href="">移民</a></li>
+                        <li><a href="">海外房产</a></li>
+                        <li class="bo-line"><a href="">活动</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <i class="r-arr"></i>
+                    <a href="" class="nav-tit b">我的合作</a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <!--中间栏-->
+        <div class="main-bar mt40 ml20 fl">
+            <div class="action block fix">
+                <a href="" title="" class="fl b dib tc a1 r-line"><i class="db"></i>添加项目</a>
+                <a href="" title="" class="fl b dib tc a2 r-line"><i class="db"></i>顾问管理</a>
+                <a href="" title="" class="fl b dib tc a3 r-line"><i class="db"></i>发起活动</a>
+                <a href="" title="" class="fl b dib tc a4"><i class="db"></i>咨询管理</a>
+            </div>
+            
+            <!--选项卡-->
+            <div class="list block mt10" id="user-center">
+                <ul class="tab fix bo-line">
+                    <li class="fl cup rel tab-selected"><i class="tab-arr abs dn"></i>账号信息</li>
+                    <li class="fl cup rel"><i class="tab-arr abs dn"></i>账号安全</li>
+                    <li class="fl cup rel"><i class="tab-arr abs dn"></i>修改密码</li>
+                </ul>
+                <div class="tab-box">
+                    <form action="" name="" method="post" id="form-account">
+                        <div class="set-headpic row fix pb20 bo-line">
+                            <div class="headpic fl tc mr60">
+                                <img src="../../../images/head_pic.png" alt="">
+                                <div class="upload tag bg-f0 cup mt10">上传图片</div>
+                                <input type="file" name="" class="dn">
+                            </div>
+                            <div class="headpic-list fl">
+                                <h1>推荐头像</h1>
+                                <ul class="fix">
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                    <li><img src="" alt=""></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"><i class="c-ef imp">*</i>用户名：</span>
+                            <div class="dib ml10">
+                                <input id="" type="text" name="username" class="text-input" placeholder="请输入用户名">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"><i class="c-ef imp">*</i>手机：</span>
+                            <div class="dib ml10">
+                                <span class="dib mr20">18520836893</span>
+                                <a href="" class="edit-phone dib mr20 c-14">修改</a>
+                                <span class="tag bg-5c">✔已验证</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"><i class="c-ef imp">*</i>邮箱：</span>
+                            <div class="dib ml10">
+                                <input id="email" type="text" name="email" class="text-input" placeholder="请输入邮箱账号">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"></span>
+                            <div class="dib ml10">
+                                <button class="btn" type="submit">保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <ul class="tab-box security dn">
+                    <li class="ova bo-line">
+                        <i class="icon checked"></i>
+                        <span class="dib b tit">登录密码</span>
+                        <span class="dib ml20 mr20 describe">采用更高级的加密可以增加账号的安全性</span>
+                        <a href="" class="c-2e">修改</a>            
+                    </li>
+                    <li class="ova bo-line">
+                        <i class="icon checked"></i>
+                        <span class="dib b tit">验证邮箱</span>
+                        <span class="dib ml20 mr20 describe">您验证的邮箱：<span class="c-66">158****9996@qq.com</span></span>
+                        <a href="" class="c-2e">修改</a>            
+                    </li>
+                    <li class="ova bo-line">
+                        <i class="icon checked"></i>
+                        <span class="dib b tit">手机验证</span>
+                        <span class="dib ml20 vm mr20 describe">您验证的手机：<span class="c-66">158****9996</span> 若已丢失或停用，请立即
+                            更换，<span class="c-ef">避免账户被盗</span>。</span>
+                        <a href="" class="c-2e">修改</a>            
+                    </li>
+                    <li class="ova">
+                        <i class="icon not-checked"></i>
+                        <span class="dib b tit">实名验证</span>
+                        <span class="dib ml20 vm mr20 describe">身份认证是指通过工商信息，或银行卡信息和身份证信息
+的核实，来证明会员身份的真实性和类型</span>
+                        <a href="" class="c-2e">认证</a>            
+                    </li>
+                </ul>
+                
+                <div class="tab-box dn">
+                    <form action="" name="" method="post" id="form-resetpwd">
+                        <div class="row">
+                            <span class="label dib tr"><i class="c-ef imp">*</i>当前密码：</span>
+                            <div class="dib ml10">
+                                <input id="" type="password" name="old_password" class="text-input old-psw" placeholder="请输入当前密码">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"><i class="c-ef imp">*</i>新密码：</span>
+                            <div class="dib ml10">
+                                <input id="new-psw" type="password" name="password" class="text-input" placeholder="请输入新密码">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"><i class="c-ef imp">*</i>确认新密码：</span>
+                            <div class="dib ml10">
+                                <input type="password" name="re_password" class="text-input" placeholder="请再次输入密码">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr"></span>
+                            <div class="dib ml10">
+                                <button class="btn" type="submit">保存</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!--右边栏-->
+        <div class="right-bar mt40 ml20 fl">
+            <!--热门项目-->
+            <div class="block r-list">
+                <h2 class="tit b bo-line">热门项目</h2>
+                <ul>
+                    <li>
+                        <a href="" class="db fix ova">
+                            <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+                            <p>推荐项目推荐项目推荐</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="" class="db fix ova">
+                            <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+                            <p>推荐项目推荐项目推荐</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="" class="db fix ova">
+                            <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+                            <p>推荐项目推荐项目推荐</p>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="" class="db fix ova">
+                            <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+                            <p>推荐项目推荐项目推荐</p>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!--热门文章-->
+            <div class="block r-list mt10">
+                <h2 class="tit b bo-line">热门文章</h2>
+                <ul>
+                    <li><a href="" title="" class="ell db"><span class="dib pr5 c-f5">1.</span>热门文章热门文章热门文章</a></li>
+                    <li><a href="" title="" class="ell db"><span class="dib pr5 c-f5">2.</span>热门文章热门文章热门文章</a></li>
+                    <li><a href="" title="" class="ell db"><span class="dib pr5 c-f5">3.</span>热门文章热门文章热门文章</a></li>
+                    <li><a href="" title="" class="ell db"><span class="dib pr5">4.</span>热门文章热门文章热门文章</a></li>
+                    <li><a href="" title="" class="ell db"><span class="dib pr5">5.</span>热门文章热门文章热门文章</a></li>
+                    <li><a href="" title="" class="ell db"><span class="dib pr5">6.</span>热门文章热门文章热门文章</a></li>
+                </ul>
+            </div>
+            <!--广告-->
+            <div class="ad mt10">
+                <a href="" title="" class="db mb10" target="_blank"><img src="../../../images/ad1.png" alt=""></a>
+                <a href="" title="" class="db mb10" target="_blank"><img src="../../../images/ad2.png" alt=""></a>
+                <a href="" title="" class="db mb10" target="_blank"><img src="../../../images/ad3.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <!--脚部-->
+    <div id="footer" class="mt30">
+        <div class="footer-outer w100">
+            <div class="footer-box com-width mao fix">
+                <img class="footer-logo fl" src="../../../images/site_logo.png" alt="出国风">
+                <div class="about-us fl fix">
+                    <ul class="fl mr35">
+                        <li class="tit bo-line b">出国风特色</li>
+                        <li><a href="" class="">产品与服务</a></li>
+                    </ul>
+                    <ul class="fl mr35">
+                        <li class="tit bo-line b">帮助中心</li>
+                        <li><a href="" class="">找回密码</a></li>
+                        <li><a href="" class="">新手教程</a></li>
+                        <li><a href="" class="">友情链接</a></li>
+                    </ul>
+                    <ul class="fl mr35">
+                        <li class="tit bo-line b">关于我们</li>
+                        <li><a href="" class="">出国风简介</a></li>
+                        <li><a href="" class="">联系我们</a></li>
+                        <li><a href="" class="">企业文化</a></li>
+                        <li><a href="" class="">人才招聘</a></li>
+                    </ul>
+                    <ul class="fl mr35">
+                        <li class="tit bo-line b">常见问题</li>
+                        <li><a href="" class="">公司注册</a></li>
+                        <li><a href="" class="">一键匹配</a></li>
+                        <li><a href="" class="">点评报告</a></li>
+                    </ul>
+                    <ul class="fl service">
+                        <li class="tit bo-line b">客服热线（工作时间 8:00 - 22:00）</li>
+                        <li class="tel b">400&nbsp;&nbsp;9677&nbsp;&nbsp;360</li>
+                        <li class="b">客服邮箱<a href="" class="b">KF@chuguofeng.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright tc com-width mao">
+                        Copyright 2014 www.chuguofeng.com All Rights Reserved <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备14095256号</a> 版权所有 深圳深海投网络科技有限公司 
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function(){
+            tabSwitch(".tab li","tab-selected",".tab-box");
+            formValidate("#form-resetpwd","#new-psw");
+            formValidate("#form-account","#new-psw");
+        });
+    </script>
+</body>
+</html>

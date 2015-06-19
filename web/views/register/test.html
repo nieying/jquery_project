@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>个人中心</title>
+<script src="../../../js/lab/jquery-1.8.3.min.js"></script>
+<script src="../../../js/lab/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    
+    <form id="form" method="get" action="">
+        <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>密码：</span>
+                    <div class="dib ml10"><input type="password" name="password" class="text-input psw" placeholder="请输入密码"></div>
+                </div>
+        <!--<p>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+        </p>-->
+        <p>
+            <label for="confirm_password">Confirm password</label>
+            <input id="confirm_password" name="confirm_password" type="password">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email">
+        </p>
+        <p>
+            <input class="submit" type="submit" value="Submit">
+        </p>
+	</form>
+    <script>
+        $(function(){
+            $("#form").validate({
+			rules: {
+				password: {
+					required: true,
+					minlength: 5
+				},
+				confirm_password: {
+					required: true,
+					minlength: 5,
+					equalTo: "#password"
+				},
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				firstname: "Please enter your firstname",
+				lastname: "Please enter your lastname",
+				username: {
+					required: "Please enter a username",
+					minlength: "Your username must consist of at least 2 characters"
+				},
+				password: {
+					required: "密码不能为空",
+					minlength: "Your password must be at least 5 characters long"
+				},
+				confirm_password: {
+					required: "请再次输入密码",
+					minlength: "Your password must be at least 5 characters long",
+					equalTo: "Please enter the same password as above"
+				},
+				email: "Please enter a valid email address",
+			}
+		});
+        });
+        
+    </script>
+</body>
+</html>

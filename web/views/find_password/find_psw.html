@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>找回密码</title>
+<script src="../../../js/lab/jquery-1.8.3.min.js"></script>
+<script src="../../../js/lab/jquery.validate.min.js"></script>
+<script src="../../../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+</head>
+
+<body>
+    <!--头部-->
+    <div id="header">
+        <!--顶部栏-->
+        <div class="top-bar com-width mao fix">
+            <div class="left-area fl">
+                关注我们
+            </div>
+            <div class="right-area fr">
+                <!--非登录-->
+                <a href="" title="">立即注册</a>
+                <a href="" title="">登录</a>
+                <!--登录-->
+            </div>
+        </div>
+        <!--导航-->
+        <div class="nav-outer w100">
+            <div class="nav-box com-width mao fix">
+                <a class="logo dib fl" href="http://www.chuguofeng.com"><img class="vm" src="../../../images/logo_w.png" alt="出国风"></a>
+                <ul class="nav fix fl ml70">
+                    <li><a href="" title="">首页</a></li>
+                    <li><a href="" title="">精品项目</a></li>
+                    <li><a href="" title="">移民公司</a></li>
+                    <li><a href="" title="">移民招投标</a></li>
+                    <li><a href="" title="">活动展会</a></li>
+                </ul>
+                <div class="fr rel">
+                    <input class="search bgw" type="text" id="" value="" placeholder="搜索">
+                    <i class="search-icon abs"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--找回密码主体-->
+    <div id="find-psw" class="com-width mao">
+        <h1 class="ac-tit pl10">找回密码</h1>
+        <div class=" ">
+            <!--进度条-->
+            <!--doing正在进行 done已经完成-->
+            <ul class="step-bar fix tc mao">
+                <li class="doing fl"><i class="step-num">1</i></li>
+                <li class="fl"><i class="step-num">2</i></li>
+                <li class="fl"><i class="step-num">3</i></li>
+                <li class="fl"><i class="step-num">✔</i></li>
+            </ul>
+            <ul class="step-text mt30 fix mao">
+                <li class="doing fl tc">填写账户信息</li>
+                <li class="fl tc">验证身份</li>
+                <li class="fl tc">设置新密码</li>
+                <li class="fl tc">完成</li>
+            </ul>
+            <!--第一步 验证手机/邮箱-->
+            <div class="step step-1">
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>找回类型：</span>
+                    <div class="dib ml10 role">
+                        <span class="dib cup mr10 role-pitch span-btn">手机找回</span>
+                        <span class="dib cup span-btn">邮箱找回</span>
+                        <input type="hidden" class="find-type" value="1">
+                    </div>    
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>账号：</span>
+                    <div class="dib ml10">
+                        <input id="account" type="text" name="account" class="text-input account" placeholder="请输入手机号码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>验证码：</span>
+                    <div class="dib ml10">
+                        <input type="text" name="ver_code" class="text-input ver-code mr10" placeholder="请输入右边验证码">
+                        <span class="span-btn cup tc" title="点击获取验证码">点击获取</span>
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10">
+                        <div class="btn next">下一步</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--第二步 确认手机或邮箱转台-->
+            <div class="step step-2 dn">
+                <!--手机找回-->
+                <div class="by-phone dn">
+                    <div class="row">
+                        <span class="label dib tr"><i class="c-ef imp">*</i>手机校验码：</span>
+                        <div class="dib ml10">
+                            <input id="" type="text" name="find_code" class="text-input find-code" placeholder="请输入手机校验码">
+                            <span class="error-box"></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="label dib tr"></span>
+                        <div class="dib ml10">
+                            <div class="btn next-2">下一步</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--邮箱找回-->
+                <div class="row by-mail rel dn">
+                    <i class="abs icon row-sucess"></i>
+                    <div class="by-mail-text ml70">
+                        <p class="c-57 b">验证邮件已发送成功！</p>
+                        <p class="c-ef">验证邮件24小时内有效，请尽快登录您的邮箱点击验证链接完成验证。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!--第三步 重置密码-->
+            <div class="step step-3 dn">
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>输入新密码：</span>
+                    <div class="dib ml10">
+                        <input id="" type="password" name="" class="text-input psw" placeholder="请输入新密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>再次输入新密码：</span>
+                    <div class="dib ml10">
+                        <input id="" type="password" name="" class="text-input re-psw" placeholder="请再次输入新密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10">
+                        <div class="btn next-3">下一步</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--第四步 确认手机或邮箱-->
+            <div class="step step-4 rel dn">
+                <i class="abs icon row-sucess"></i>
+                <div class="ml70">
+                    <p class="c-57 b">成功重置您的密码！</p>
+                    <p class=" "><span class="timer">10</span>秒后回到首页，您也可以 <a href="" title="返回首页" class="c-14">返回首页</a> | <a href="" title="返回首页"  class="c-14">返回登录</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--small 脚部 start-->
+    <div id="small-footer" class="com-width mao tc mt30">
+        <div class="link">
+            <a href="" title="">关于我们</a>|
+            <a href="" title="">出国风简介</a>|
+            <a href="" title="">联系我们</a>|
+            <a href="" title="">企业文化</a>|
+            <a href="" title="">人才招聘</a>|
+            <a href="" title="">产品与服务</a>|
+            <a href="" title="">网站地图</a>
+        </div>
+        <div class="copyright">Copyright 2015 深圳深海投网络科技有限公司 </div>
+    </div>
+    <!--small 脚部 end-->
+    
+    <script>
+        $(function(){
+            /*选择找回方式*/
+            $(".role span").bind("click",function(){
+                var index = $(this).index();
+                $(this).addClass("role-pitch").siblings(".role span").removeClass("role-pitch");
+                /*提交角色类型*/
+                $(this).parent().find(".find-type").val(index+1);
+                if($(".find-type").val() == 1){ $(".account").attr("placeholder","请输入手机号码");}
+                if($(".find-type").val() == 2 ){ $(".account").attr("placeholder","请输入邮箱");} 
+            });
+            
+            
+            
+            /*步骤一，下一步*/
+            $(".next").bind("click",function(){
+                /*公共参数*/
+                var account = $(".account").val();
+                var ver_code = $(".ver-code").val();
+                var find_type = $(".find-type").val();
+                
+                /*执行验证，判断账号*/
+                if(account == ""){
+                    $(".account").parent().find(".error-box").empty().html("<label class='error'>请填写要找回的账号</label>");
+                    return false;
+                }else{
+                    if(find_type ==1 ){
+                        /*判断电话号码格式*/
+                        if(!/^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i.test(account)){
+                           $(".account").parent().find(".error-box").empty().html("<label class='error'>请填写正确格式的手机号码</label>"); 
+                            return false;
+                        }
+                    }
+                    if( find_type == 2 ){
+                        /*判断邮箱格式*/
+                        if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(account)){
+                            $(".account").parent().find(".error-box").empty().html("<label class='error'>请填写正确格式的邮箱</label>"); 
+                            return false;
+                        }
+                        /*console.log("邮箱格式不正确");*/
+                    }
+                    /*清除提示*/
+                    $(".account").parent().find(".error-box").empty(); 
+                }
+                
+                /*执行验证，判断验证码*/
+                if(ver_code == ""){
+                    $(".ver-code").parent().find(".error-box").empty().html("<label class='error'>请填写验证码</label>");
+                    return false;
+                }else{
+                    //这里判断是否对等
+                    $(".ver-code").parent().find(".error-box").empty();
+                }
+                
+                console.log("通过第一步");
+                
+                /*根据找回类型显示第二步*/
+                $(".step-1").hide();
+                /*切换进度条*/
+                $(".step-bar li").eq(0).removeClass("doing").addClass("done");
+                $(".step-text li").eq(0).removeClass("doing").addClass("done");
+                $(".step-bar li").eq(1).addClass("doing");
+                $(".step-text li").eq(1).addClass("doing");
+                if(find_type == 1 ){ 
+                    console.log("显示手机找回");
+                    $(".step-2, .by-phone").show();
+                } 
+                if(find_type == 2 ){ 
+                    console.log("显示邮箱找回");
+                    $(".step-2, .by-mail").show();
+                }
+                
+            });
+            
+            /*手机找回，步骤2下一步*/
+            $(".next-2").bind("click",function(){
+                console.log("点击第二个下一步啦");
+                var find_code = $(".find-code").val();
+                if(find_code == ""){
+                    $(".find-code").parent().find(".error-box").empty().html("<label class='error'>请填写短信验证码</label>"); 
+                }else{
+                    $(".find-code").parent().find(".error-box").empty();
+                    /*执行ajax，判断验证码是否正确*/
+                    /*如果正确*/
+                    
+                    /*切换进度条*/
+                    $(".step-bar li").eq(1).removeClass("doing").addClass("done");
+                    $(".step-text li li").eq(1).removeClass("doing").addClass("done");
+                    $(".step-bar li").eq(2).addClass("doing");
+                    $(".step-text li").eq(2).addClass("doing");
+                    $(".step-2").hide();
+                    $(".step-3").show();
+                }
+            });
+            
+            /*邮箱重置密码*/
+            var mail_reset = getQuery("mail_reset");
+            console.log("重置邮箱状态为："+mail_reset);
+            if(mail_reset){
+                if( mail_reset == 1){
+                    $(".step-1, .step-2").hide();
+                    $(".step-3").show();
+                    $(".step-bar li").eq(0).removeClass("doing").addClass("done");
+                    $(".step-text li").eq(0).removeClass("doing").addClass("done");
+                    $(".step-bar li").eq(1).addClass("done");
+                    $(".step-text li").eq(1).addClass("done");
+                    $(".step-bar li").eq(2).addClass("doing");
+                    $(".step-text li").eq(2).addClass("doing");
+                }
+            }
+            
+            
+            /*第三步，设置新密码*/
+            $(".next-3").bind("click",function(){
+                var psw = $(".psw").val();
+                var re_psw = $(".re-psw").val();
+                if(psw == ""){
+                    $(".psw").parent().find(".error-box").empty().html("<label class='error'>新密码不能为空</label>"); 
+                    return false;
+                }else if( psw.length < 6){
+                    $(".psw").parent().find(".error-box").empty().html("<label class='error'>密码不能小于6位数</label>");
+                    return false;
+                }else if(re_psw == ""){
+                    $(".psw").parent().find(".error-box").empty();
+                    $(".re-psw").parent().find(".error-box").empty().html("<label class='error'>请再次输入密码</label>"); 
+                    return false;
+                }else if( psw != re_psw){
+                    $(".re-psw").parent().find(".error-box").empty().html("<label class='error'>输入密码不一致</label>");
+                }else{
+                    $(".re_psw").parent().find(".error-box").empty();
+                    
+                    /*切换进度条*/
+                    $(".step-bar li").eq(2).removeClass("doing").addClass("done");
+                    $(".step-text li").eq(2).removeClass("doing").addClass("done");
+                    $(".step-bar li").eq(3).addClass("doing");
+                    $(".step-text li").eq(3).addClass("doing");
+                    $(".step-3").hide();
+                    $(".step-4").show();
+                    var timer = 10;
+                    setInterval(function(){
+                        if(timer == 1) {
+                            location.href = "http://www.chuguofeng.com";
+                        }
+                        timer--;
+                        $(".timer").text(timer);
+                    },1000)
+                }
+            });
+            
+            
+        });
+    </script>
+</body>

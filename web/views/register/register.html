@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>个人用户注册</title>
+<script src="../../../js/lab/jquery-1.8.3.min.js"></script>
+<script src="../../../js/lab/jquery.validate.min.js"></script>
+<script src="../../../js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css">
+</head>
+
+<body class="bg-fa">
+    <!--头部-->
+    <div id="header">
+        <!--顶部栏-->
+        <div class="top-bar com-width mao fix">
+            <div class="left-area fl">
+                关注我们
+            </div>
+            <div class="right-area fr">
+                <!--非登录-->
+                <a href="" title="">立即注册</a>
+                <a href="" title="">登录</a>
+                <!--登录-->
+            </div>
+        </div>
+        <!--导航-->
+        <div class="nav-outer w100">
+            <div class="nav-box com-width mao fix">
+                <a class="logo dib fl" href="http://www.chuguofeng.com"><img class="vm" src="../../../images/logo_w.png" alt="出国风"></a>
+                <ul class="nav fix fl ml70">
+                    <li><a href="" title="">首页</a></li>
+                    <li><a href="" title="">精品项目</a></li>
+                    <li><a href="" title="">移民公司</a></li>
+                    <li><a href="" title="">移民招投标</a></li>
+                    <li><a href="" title="">活动展会</a></li>
+                </ul>
+                <div class="fr rel">
+                    <input class="search bgw" type="text" id="" value="" placeholder="搜索">
+                    <i class="search-icon abs"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--注册-->
+    <div id="register" class="com-width mao">
+        <div>
+            <h1 class="ac-tit pl10">欢迎入驻出国风</h1>
+        </div>
+        <div class="reg-tab rel mt50">
+            <span class="dib cup b bg-w selected">个人用户</span>
+            <span class="dib cup b bg-w ">顾问用户</span>
+            <span class="dib cup b bg-w ">企业用户</span>
+        </div>
+        
+        <div class="rel reg-tab-box bg-w">
+            <form action="" name="" method="post" class="" id="reg-personal">
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>手机：</span>
+                    <div class="dib ml10">
+                        <input id="phone" type="text" name="phone" class="text-input phone" placeholder="请输入手机号码">
+                        <span class="error-box"></span>
+                    </div>
+                    <i class="icon"></i>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>短信校验码：</span>
+                    <div class="dib ml10">
+                        <input type="text" name="msg_code" class="text-input msg-code mr10" placeholder="请输入校验码">
+                        <span class="get-code span-btn cup tc" title="点击获取验证码">点击获取</span>
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>密码：</span>
+                    <div class="dib ml10">
+                        <input id="per-psw" type="password" name="password" class="text-input psw" placeholder="请输入密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>确认密码：</span>
+                    <div class="dib ml10">
+                        <input type="password" name="re_password" class="text-input re-psw" placeholder="请再次输入密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10"><input type="checkbox" value="" name="agree" checked class="mr10"><a href="http://www.chuguofeng.com/helpcenter/22" target="_blank" class="c-14">同意《深海投网络注册协议》</a></div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10">
+                        <button class="btn" type="submit">立即注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="rel reg-tab-box bg-w dn">
+            <form action="" name="" method="post" class="" id="reg-consultant">
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>顾问类型：</span>
+                    <div class="dib ml10 role">
+                        <span class="dib cup mr10 role-pitch span-btn">移民顾问</span>
+                        <span class="dib cup span-btn">留学顾问</span>
+                        <input type="hidden" class="role-type" value="1" name="consultant-type">
+                    </div>    
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>手机：</span>
+                    <div class="dib ml10">
+                        <input id="phone" type="text" name="phone" class="text-input phone" placeholder="请输入手机号码">
+                        <span class="error-box"></span>
+                    </div>
+                    <i class="icon"></i>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>短信校验码：</span>
+                    <div class="dib ml10">
+                        <input type="text" name="msg_code" class="text-input msg-code mr10" placeholder="请输入校验码">
+                        <span class="get-code span-btn cup tc" title="点击获取验证码">点击获取</span>
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>密码：</span>
+                    <div class="dib ml10">
+                        <input id="con-psw" type="password" name="password" class="text-input psw" placeholder="请输入密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>确认密码：</span>
+                    <div class="dib ml10">
+                        <input type="password" name="re_password" class="text-input re-psw" placeholder="请再次输入密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10"><input type="checkbox" value="" name="agree" checked class="mr10"><a href="http://www.chuguofeng.com/helpcenter/22" target="_blank" class="c-14">同意《深海投网络注册协议》</a></div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10">
+                        <button class="btn" type="submit">立即注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="rel reg-tab-box bg-w dn">
+            <form action="" name="" method="post" class="" id="reg-company">
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>服务商类型：</span>
+                    <div class="dib ml10 role">
+                        <span class="dib cup mr10 span-btn role-pitch">项目公司</span>
+                        <span class="dib cup mr10 span-btn">移民公司</span>
+                        <span class="dib cup span-btn">留学公司</span>
+                        <input type="hidden" class="role-type" value="1" name="company-type">
+                    </div>    
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>邮箱：</span>
+                    <div class="dib ml10">
+                        <input id="email" type="text" name="email" class="text-input email" placeholder="请输入邮箱账号">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>密码：</span>
+                    <div class="dib ml10">
+                        <input id="com-psw" type="password" name="password" class="text-input psw" placeholder="请输入密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"><i class="c-ef imp">*</i>确认密码：</span>
+                    <div class="dib ml10">
+                        <input type="password" name="re_password" class="text-input re-psw" placeholder="请再次输入密码">
+                        <span class="error-box"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10"><input type="checkbox" value="" name="agree" checked class="mr10"><a href="http://www.chuguofeng.com/helpcenter/22" target="_blank" class="c-14">同意《深海投网络注册协议》</a></div>
+                </div>
+                <div class="row">
+                    <span class="label dib tr"></span>
+                    <div class="dib ml10">
+                        <button class="btn" type="submit">立即注册</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        
+    </div>
+    
+    <script>
+        $(function(){
+            /*选项卡切换*/
+            tabSwitch(".reg-tab span","selected",".reg-tab-box");
+			
+            /*选择角色*/
+            $(".role span").bind("click",function(){
+                var index = $(this).index();
+                $(this).addClass("role-pitch").siblings(".role span").removeClass("role-pitch");
+                /*提交角色类型*/
+                $(this).parent().find(".role-type").val(index+1);
+            });
+            
+            /*获取验证码*/
+            $(".get-code").bind("click",function(){
+                var phone = $(".phone").val();
+                /*判断是否有手机号*/
+                if(phone == ""){
+                    $(this).parent().find(".error-box").empty().html("<label class='error' for='msg_code'>验证码不能为空</label>");
+                }
+                /*获取验证码并发送至用户手机*/
+                
+            });
+            
+            /* 表单验证*/
+            formValidate("#reg-personal","#per-psw");
+            formValidate("#reg-company","#com-psw");
+            formValidate("#reg-consultant","#con-psw");
+            
+        });
+    </script>
+</body>
+</html>

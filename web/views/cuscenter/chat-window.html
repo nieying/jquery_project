@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>弹出框</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    <script src="../../../js/lab/jquery-1.8.3.min.js"></script>
+    <!--引入编辑器 start-->
+    <script src="../../../js/umediter/umeditor.config.js"></script>
+    <script src="../../../js/umediter/umeditor.min.js"></script>
+    <script src="../../../js/umediter/lang/zh-cn/zh-cn.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../../js/umediter/themes/default/css/umeditor.min.css">
+    <!--引入编辑器 end-->
+    <script src="../../../js/common.js"></script>
+
+</head>
+
+<body class="bg-fa">
+<div class="btn-blue mt50 w120">联系客服</div>
+<div class="modal chat-window">
+
+    <div class="ver-modal-body">
+        <!--第一部分-->
+        <div class="dib w60 h100 rel one">
+            <ul class="ver-tab fix tc">
+                <li class="talk fl cup rel mt20 ver-tab-selected"><i class="ver-tab-arr abs dn"></i>会话</li>
+                <li class="fl cup rel"><i class="ver-tab-arr abs dn"></i>联系人</li>
+                <li class="fl cup rel"><i class="ver-tab-arr abs dn"></i>群组</li>
+            </ul>
+            <div class="tc mt100">
+                <img class="img-circle mt100" src="../../../images/head_pic.png"/>
+            </div>
+        </div>
+        <!--第二部分-->
+        <div class="dib w160 h100 abs two">
+            <!--会话-->
+            <div class="ver-tab-box chat">
+                <div class="chat-user cup mt10 p10 bg-e1">
+                    <div class="dib">
+                        <img class="img-circle dib" src="../../../images/head_pic.png"/>
+                    </div>
+
+                    <div class="dib vt">
+                        <span>黄小明</span>
+
+                        <p>技术总监</p>
+                    </div>
+                    <div class="vt mt10 del-user fr dn" title="删除该会话">
+                        <img class="w20" src="../../../images/素材/close21.png"/>
+                    </div>
+                </div>
+                <div class="chat-user cup p10">
+                    <div class="dib">
+                        <img class="img-circle dib" src="../../../images/head_pic.png"/>
+                    </div>
+
+                    <div class="dib vt">
+                        <span>孔鹏程</span>
+
+                        <p>web前端</p>
+                    </div>
+                    <div class="vt mt10 del-user fr dn" title="删除该会话">
+                        <img class="w20" src="../../../images/素材/close21.png"/>
+                    </div>
+                </div>
+                <div class="chat-user cup p10">
+                    <div class="dib">
+                        <img class="img-circle dib" src="../../../images/head_pic.png"/>
+                    </div>
+
+                    <div class="dib vt">
+                        <span>聂颖</span>
+
+                        <p>web前端</p>
+                    </div>
+                    <div class="vt mt10 del-user fr dn" title="删除该会话">
+                        <img class="w20" src="../../../images/素材/close21.png"/>
+                    </div>
+                </div>
+                <div class="show-tips tc mt100 dn">
+                    您暂时没有会话！
+                </div>
+            </div>
+
+            <!--联系人-->
+            <div class="ver-tab-box dn">
+                <div class="bo-line pb10 fix">
+                    <i class="search-icon-left abs cup mlt10 ml20"></i>
+                    <input class="search-user mt10 ml10" type="text" placeholder="查找的用户"/>
+                    <img class="w20 del-search cup fr mlt10" src="../../../images/素材/close21.png"/>
+                </div>
+                <div class="contact-list">
+                </div>
+                <div class="search-list">
+                    <div class="search-tips mt100 tc dn">
+                        没有与您搜索匹配项！
+                    </div>
+                </div>
+
+            </div>
+
+            <!--群组-->
+            <div class="ver-tab-box dn">
+                <div class="bo-line pb10">
+                    <i class="search-icon-left abs mlt10 ml20"></i>
+                    <input class="search-user mt10 ml10" type="text" placeholder="查找的群组"/>
+                    <img class="w20 del-search cup fr mlt10" src="../../../images/素材/close21.png"/>
+                </div>
+                <div class="group-user cup p10 bg-e1">
+                    <div class="dib">
+                        <img class="img-circle dib" src="../../../images/head_pic.png"/>
+                    </div>
+
+                    <div class="dib vt">
+                        <span>A群组</span>
+
+                        <p>A群组</p>
+                    </div>
+                </div>
+                <div class="group-user cup p10">
+                    <div class="dib">
+                        <img class="img-circle dib" src="../../../images/head_pic.png"/>
+                    </div>
+
+                    <div class="dib vt">
+                        <span>B群组</span>
+
+                        <p>C群组。</p>
+                    </div>
+                </div>
+                <div class="group-user cup p10">
+                    <div class="dib">
+                        <img class="img-circle dib" src="../../../images/head_pic.png"/>
+                    </div>
+
+                    <div class="dib vt">
+                        <span>C群组</span>
+
+                        <p>C群组。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--第三部分-->
+        <div class="fr h100 chat-three">
+            <div class="chats">
+                <div class="user-name p10 bo-line h40">
+                    <div class="fl ml20">
+                        <span class="b f18">黄小明</span>
+
+                        <p>技术总监</p>
+                    </div>
+                    <div class="fr">
+                        <span class="ver-close cup fr">×</span>
+                    </div>
+                </div>
+                <div class="msg-body bo-line">
+                </div>
+                <div class="fix">
+                    <textarea class="send-text" cols="30" rows="10"></textarea>
+
+                    <div class="fr">
+                        <div class="btn-blue-small  mr10">
+                            <span class="send-msg">发送&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+                            <i class="checkbox-sprite vm"></i>
+                        </div>
+                        <ul class="drop-menu abs bg-w dn">
+                            <li class="db cup checked-send checked">按Ctrl+Enter键发送</li>
+                            <li class="db cup checked-send">按Enter键发送</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts dn">
+
+            </div>
+            <div class="groups dn">
+                <div></div>
+            </div>
+        </div>
+
+        <div class="fr h100 send-three dn">
+            <div class="fr">
+                <span class="ver-close cup fr">×</span>
+            </div>
+            <div class="tc mt100">
+                <img src="../../../images/head_pic.png"/>
+
+                <p class="f18 b mt30">黄小明</p>
+
+                <p>技术总监</p>
+                <button class="send-chat btn-blue mt30">发起会话</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    /*选项卡操作*/
+    $(function () {
+        tabSwitch(".ver-tab li", "ver-tab-selected", ".ver-tab-box");
+
+        $(".table tr").hover(function () {
+
+            if ($(this).index() != 0) {
+                $(this).animate({background: '#000'}, 300);
+            }
+        }, function () {
+            $(this).animate({background: '#fff'}, 300);
+        });
+    });
+
+    $(function () {
+
+        var userList = [{
+            icon: "../../../images/head_pic.png",
+            name: "黄小明",
+            age: 28,
+            job: "技术总监"
+        }, {
+            icon: "../../../images/head_pic.png",
+            name: "孔鹏程",
+            age: 24,
+            job: "web前端"
+        }, {
+            icon: "../../../images/head_pic.png",
+            name: "聂颖",
+            age: 22,
+            job: "web前端"
+        }];
+
+        /*弹出对话框*/
+        $(".btn-blue").click(function () {
+            $(".chat-window").show();
+        });
+
+        $(".ver-close").click(function () {
+            $(".chat-window").hide();
+        });
+
+        /*会话：鼠标经过事件*/
+        $(".chat-user").mouseover(function () {
+            $(this).addClass("bg-e8");
+            $(this).find(".del-user").show();
+        }).mouseleave(function () {
+            $(this).removeClass("bg-e8");
+            $(this).find(".del-user").hide();
+        }).click(function () {
+            $(this).addClass("bg-e1").siblings(".ver-tab-box div").removeClass("bg-e1");
+            $(".chat-three").show();
+            $(".send-three").hide();
+        });
+
+
+
+        /*搜索框中显示后面Icon*/
+        $(".search-user").keydown(function () {
+            if ($(".search-user").val().length === 0) {
+                $(".del-search").hide();
+            } else {
+                $(".del-search").show();
+            }
+        });
+
+        /*清除查询框内的内容*/
+        $(".del-search").click(function () {
+            $(".contact-list").show();
+            $(".search-list").hide();
+            $(this).hide();
+            if ($(".search-user").val()) {
+                $(".search-user").val("");
+            }
+        });
+
+        /*执行搜索*/
+        $(".search-icon-left").click(function (event) {
+            if ($(".search-user").val() != '') {
+                searchUsers();
+            } else {
+                alert("请输入您要查询的内容！");
+            }
+            event.stopPropagation();
+        });
+
+        /*查询键盘enter事件*/
+        $(document).keypress(function (e) {
+            // 回车键事件
+            if ($(".search-user").val() != '') {
+                if (e.which == 13) {
+                    searchUsers();
+                }
+            }
+        });
+
+        /*选择哪种方式发送*/
+        $(".checkbox-sprite").click(function (event) {
+            if ($(this).attr("class").length === 23) {
+                $(this).removeClass("true");
+                $(".drop-menu").hide();
+                event.stopPropagation();
+            } else {
+                $(this).addClass("true");
+                $(".drop-menu").show();
+                event.stopPropagation();
+            }
+        });
+
+        $(".checked-send").click(function () {
+            $(this).addClass("checked").siblings(".drop-menu li").removeClass("checked");
+        });
+
+        /*删除聊天人员*/
+        $(".del-user").click(function (event) {
+            $(this).parent().remove();
+            console.log();
+            if ($(".chat>.chat-user").length === 0) {
+                $(".show-tips").show();
+            } else {
+                $(".show-tips").hide();
+            }
+            event.stopPropagation();
+        });
+
+        /*发送信息*/
+        $(".send-msg").click(function (event) {
+            sendMsg();
+            event.stopPropagation();
+        });
+
+        /*发送信息enter事件*/
+        $(document).keypress(function (e) {
+            // 回车键事件
+            if ($(".send-text").val() != '') {
+                if (e.which == 13) {
+                    sendMsg();
+                }
+            }
+        });
+
+        /*发起会话*/
+        $(".send-chat").click(function () {
+            $(".talk").addClass("ver-tab-selected").siblings(".ver-tab li").removeClass("ver-tab-selected");
+            $(".chat-three").show();
+            $(".send-three").hide();
+        });
+
+        //查询联系人
+        function searchUsers() {
+            var searchList = userList.filter(function (user) {
+                return user.name.indexOf($(".search-user").val()) > -1;
+            });
+            if (searchList.length > 0) {
+                $(".contact-list").hide();
+                $(".search-tips").hide();
+                $.each(searchList, function (index, user) {
+                    console.log(index, user);
+                    var str = "<div class='contact-user cup p10'>" +
+                            "<div> " +
+                            "<div class='dib'>" +
+                            " <img class='img-circle dib' src='../../../images/head_pic.png'/> " +
+                            "</div> " +
+                            "<div class='dib vt' title='孔鹏程'> " +
+                            "<span>" + user.name + "</span>" +
+                            "<p>" + user.job + "</p> " +
+                            "</div>" +
+                            "</div>" +
+                            "</div>";
+                    $(".search-list").append(str);
+                });
+            } else {
+                $(".contact-list").hide();
+                $(".search-tips").show();
+                console.log("hello world！");
+            }
+        }
+
+        //发送信息
+        function sendMsg() {
+            if ($(".send-text").val() != '') {
+                $(".msg-body").append("<div class='p10'>" + $(".send-text").val() + "</div>");
+                $(".send-text").val("");
+            } else {
+                alert("请输入您要发送的内容！");
+            }
+        }
+
+        //获取联系人列表
+        function getUserList() {
+            $.each(userList, function (index, user) {
+                console.log(index, user);
+                var str = "<div class='contact-user cup p10'>" +
+                        "<div> " +
+                        "<div class='dib'>" +
+                        " <img class='img-circle dib' src='../../../images/head_pic.png'/> " +
+                        "</div> " +
+                        "<div class='dib vt' title='孔鹏程'> " +
+                        "<span>" + user.name + "</span>" +
+                        "<p>" + user.job + "</p> " +
+                        "</div>" +
+                        "</div>" +
+                        "</div>";
+                $(".contact-list").append(str);
+
+                /*联系人：鼠标点击事件*/
+                $(".contact-user").mouseover(function () {
+                    $(this).addClass("bg-e8");
+                    $(this).find(".del-user").show();
+                }).mouseleave(function () {
+                    $(this).removeClass("bg-e8");
+                    $(this).find(".del-user").hide();
+                }).click(function () {
+                    $(this).addClass("bg-e1").siblings(".ver-tab-box div").removeClass("bg-e1");
+                    $(".chat-three").hide();
+                    $(".send-three").show();
+                });
+            });
+        }
+
+        getUserList();
+    })
+</script>
+</body>
+</html>

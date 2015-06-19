@@ -1,0 +1,638 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>顾问管理</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/common.css">
+    <script src="../../../js/lab/jquery-1.8.3.min.js"></script>
+    <script src="../../../js/common.js"></script>
+</head>
+
+<body class="bg-fa">
+<!--头部-->
+<div id="header">
+    <!--顶部栏-->
+    <div class="top-bar com-width mao fix">
+        <div class="left-area sns fl">
+            关注我们
+            <a href="" class="weibo dib vm mr10 ml10"></a>
+            <a href="" class="weixin dib vm"></a>
+        </div>
+        <div class="right-area fr">
+            <!--非登录-->
+            <a href="" title="" class="dib">立即注册</a> |
+            <a href="" title="" class="dib">登录</a>
+            <!--登录-->
+            <span class="dib">欢迎您：你妹啊</span> |
+            <a href="" title="" class="dib mr35">进入个人中心</a>
+            <a href="" title="" class="dib exit c-14">退出</a>
+        </div>
+    </div>
+    <!--导航-->
+    <div class="nav-outer w100">
+        <div class="nav-box com-width mao fix">
+            <a class="logo dib fl" href="http://www.chuguofeng.com"><img class="vm" src="../../../images/logo_w.png" alt="出国风"></a>
+
+            <ul class="nav fix fl ml70">
+                <li><a href="" title="">首页</a></li>
+                <li><a href="" title="">精品项目</a></li>
+                <li><a href="" title="">移民公司</a></li>
+                <li><a href="" title="">移民招投标</a></li>
+                <li><a href="" title="">活动展会</a></li>
+            </ul>
+            <div class="fr rel">
+                <input class="search bgw" type="text" value="" placeholder="搜索">
+                <i class="search-icon abs"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--主体-->
+<div id="wrap" class="fix com-width mao">
+    <!--左边栏-->
+    <div class="left-bar mt40 fl">
+        <div class="user-info block tc ">
+            <div class="head-pic mao">
+                <img src="../../../images/head_pic.png" alt="">
+            </div>
+            <p class="lh20 mt20">HI 早上好</p>
+
+            <p class="lh20">15800005555</p>
+
+            <div class="user-state mt10">
+                <!--电话验证-->
+                <i class="dib phone-check"></i>
+                <!--邮箱验证-->
+                <i class="dib mail-check"></i>
+                <!--设置-->
+                <i class="dib setup"></i>
+            </div>
+        </div>
+        <ul class="main-nav block mt10">
+            <li class="rel">
+                <div class="r-arr"><i></i></div>
+                <a href="javascript:void(0);" class="nav-tit b bo-line">个人信息</a>
+
+                <ul>
+                    <li class=""><a href="" class="selected">账号资料</a></li>
+                    <li class="bo-line"><a href="">业务资料</a></li>
+                </ul>
+            </li>
+            <li class="rel">
+                <div class="r-arr"><i></i></div>
+                <a href="javascript:void(0);" class="nav-tit b bo-line">消息中心</a>
+
+                <ul>
+                    <li><a href="">会话</a></li>
+                    <li><a href="">报名的活动</a></li>
+                    <li class="bo-line"><a href="">顾问列表</a></li>
+                </ul>
+            </li>
+            <li class="rel">
+                <div class="r-arr"><i></i></div>
+                <a href="" class="nav-tit b bo-line">我的招标</a>
+            </li>
+            <li class="rel">
+                <div class="r-arr"><i></i></div>
+                <a href="javascript:void(0);" class="nav-tit b">我的收藏</a>
+
+                <ul>
+                    <li><a href="">所有收藏</a></li>
+                    <li><a href="">移民</a></li>
+                    <li><a href="">海外房产</a></li>
+                    <li class="bo-line"><a href="">活动</a></li>
+                </ul>
+            </li>
+            <li class="rel">
+                <i class="r-arr"></i>
+                <a href="" class="nav-tit b">我的合作</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <!--中间栏-->
+    <div class="main-bar mt40 ml20 fl">
+        <!--选项卡-->
+        <div class="list block mt10">
+            <ul class="tab fix bo-line">
+                <li class="fl cup rel tab-selected con-apply">顾问申请</li>
+                <li class="fl cup rel con-authorize">顾问授权</li>
+                <span id="add-consultant" class="fr mt10 btn-blue-small">
+                   添加顾问
+                </span>
+                <span id="deal-project" class="fr mt10 btn-blue-small dn">
+                   分配项目
+                </span>
+            </ul>
+
+            <!--顾问申请-->
+            <ul class="tab-box mt40 h720">
+                <li class="dib w200 tc get-code">
+                    <div class="mb10">
+                        <img src="../../../images/head_pic.png" alt=""/>
+                    </div>
+                    <div class="mb10 ml10">
+                        <span class="fl">姓名：阿三</span>
+                        <a href="" class="ml50 c-2e">详情</a>
+                    </div>
+                    <div class="fl mb10 ml10">联系电话：18612358976</div>
+                    <div>
+                        <input class="cup" type="button" value="授权"/>
+                        <input class="cup" type="button" value="否决"/>
+                    </div>
+                </li>
+
+                <li class="dib w200 ml10 tc get-code">
+                    <div class="mb10"><img src="../../../images/head_pic.png" alt=""/></div>
+                    <div class="mb10 ml10">
+                        <span class="fl">姓名：阿三</span>
+                        <a href="" class="ml50 c-2e">详情</a>
+                    </div>
+                    <div class="fl mb10 ml10">联系电话：18612358976</div>
+                    <div>
+                        <input class="cup" type="button" value="授权"/>
+                        <input class="cup" type="button" value="否决"/>
+                    </div>
+                </li>
+
+                <li class="dib w200 ml10 tc get-code">
+                    <div class="mb10"><img src="../../../images/head_pic.png" alt=""/></div>
+                    <div class="mb10 ml10">
+                        <span class="fl">姓名：阿三</span>
+                        <a href="" class="ml50 c-2e">详情</a>
+                    </div>
+                    <div class="fl mb10 ml10">联系电话：18612358976</div>
+                    <div>
+                        <input class="cup" type="button" value="授权"/>
+                        <input class="cup" type="button" value="否决"/></div>
+                </li>
+            </ul>
+
+            <!--添加顾问-modal-->
+            <div class="modal add-consultant">
+                <div class="modal-title">
+                    <span class="f16">添加顾问</span>
+                    <button type="button" class="close cup">×</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" name="" method="post" id="from-add-project">
+                        <div class="row">
+                            <span class="label dib tr">手机号：</span>
+
+                            <div class="dib ml10">
+                                <input type="text" name="" class="text-input" placeholder="请输入有效的手机号">
+                                <span class="error-box"></span>
+                            </div>
+                            <i class="icon"></i>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr">验证码：</span>
+
+                            <div class="dib ml10">
+                                <input type="text" name="" class="input-code" placeholder="请输入验证码">
+                                <span class="cup c-2e">获取短信验证码</span>
+                                <span class="error-box"></span>
+                            </div>
+                            <i class="icon"></i>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr">真实姓名：</span>
+
+                            <div class="dib ml10">
+                                <input type="text" name="" class="text-input" placeholder="请输入您的真实姓名">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr">电子邮箱：</span>
+
+                            <div class="dib ml10">
+                                <input type="text" name="" class="text-input" placeholder="请输入您的电子邮箱">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr">初始密码：</span>
+
+                            <div class="dib ml10">
+                                <input type="text" name="" class="text-input" placeholder="请输入初始密码">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="label dib tr">确定密码：</span>
+
+                            <div class="dib ml10">
+                                <input type="text" name="" class="text-input" placeholder="请输入确定密码">
+                                <span class="error-box"></span>
+                            </div>
+                        </div>
+
+                        <div class="tc mt50">
+                            <span class="confirm-pro btn-blue w120">
+                                 确定
+                            </span></div>
+                    </form>
+                </div>
+            </div>
+
+            <!--顾问授权-->
+            <ul class="tab-box mt40 h720 dn">
+                <li class="ova fix bo-line">
+                    <div class="fl mr10 rel df">
+                        <img class="" src="../../../images/1_1_100px.png">
+
+                        <div class="ml10 mt10">
+                            <p>姓名：阿三</p>
+
+                            <p>联系电话：18782330099</p>
+
+                            <p class="mt10"><a href="" class="c-2e">更多详情</a></p>
+                        </div>
+                    </div>
+                    <div class="fr tc mt30">
+                        <label class="cup mr50"><input type="checkbox" checked/>顾问经理</label>
+                        <input type="button" value="消失授权" class="submit-btn cup"/>
+                    </div>
+                </li>
+                <li class="ova fix bo-line">
+                    <div class="fl mr10 rel df">
+                        <img class="" src="../../../images/1_1_100px.png">
+
+                        <div class="ml10 mt10">
+                            <p>姓名：阿三</p>
+
+                            <p>联系电话：18782330099</p>
+
+                            <p class="mt10"><a href="" class="c-2e">更多详情</a></p>
+                        </div>
+                    </div>
+                    <div class="fr tc mt30">
+                        <label class="cup mr50"><input type="checkbox"/> 顾问经理</label>
+                        <input type="button" value="消失授权" class="submit-btn cup"/>
+                    </div>
+                </li>
+            </ul>
+
+            <!--分配项目modal-->
+            <div class="modal deal-project">
+                <div class="modal-title">
+                    <span class="f16">分配项目</span>
+                    <button type="button" class="close cup">×</button>
+                </div>
+                <div class="modal-body">
+                    <div class="list mt10">
+                        <ul class="tab2 fix bo-line">
+                            <li id="pro" class="fl cup rel tab2-selected">项目视角</li>
+                            <li id="con" class="fl cup rel">顾问视角</li>
+                        </ul>
+
+                        <div class="tabs">
+                            <div class="pro-view">
+                                <div class="fl mt20 w300">
+                                    <div class="block p5 tc bg-e8 project">项目</div>
+                                    <div class="project-info"></div>
+                                </div>
+                                <div class="fr mt20 w200">
+                                    <div class="block p5 tc bg-e8 consultant">顾问</div>
+                                    <div class="consultant-info">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs dn">
+                            <div class="con-view">
+                                <div class="fl mt20 w200">
+                                    <div class="block p5 tc bg-e8 consultant">顾问</div>
+                                    <div class="consultant-info"></div>
+                                </div>
+                                <div class="fr mt20 w300">
+                                    <div class="block p5 tc bg-e8 project">项目</div>
+                                    <div class="project-info"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--右边栏-->
+    <div class="right-bar mt40 ml20 fl">
+        <!--热门项目-->
+        <div class="block r-list">
+            <h2 class="tit b bo-line">热门项目</h2>
+
+            <ul>
+                <li>
+                    <a href="" class="db fix ova">
+                        <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+
+                        <p>推荐项目推荐项目推荐</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="db fix ova">
+                        <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+
+                        <p>推荐项目推荐项目推荐</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="db fix ova">
+                        <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+
+                        <p>推荐项目推荐项目推荐</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="db fix ova">
+                        <img src="../../../images/item_pic.png" alt="" class="fl mr10">
+
+                        <p>推荐项目推荐项目推荐</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!--热门文章-->
+        <div class="block r-list mt10">
+            <h2 class="tit b bo-line">热门文章</h2>
+
+            <ul>
+                <li><a href="" title="" class="ell db"><span class="dib pr5 c-f5">1.</span>热门文章热门文章热门文章</a></li>
+                <li><a href="" title="" class="ell db"><span class="dib pr5 c-f5">2.</span>热门文章热门文章热门文章</a></li>
+                <li><a href="" title="" class="ell db"><span class="dib pr5 c-f5">3.</span>热门文章热门文章热门文章</a></li>
+                <li><a href="" title="" class="ell db"><span class="dib pr5">4.</span>热门文章热门文章热门文章</a></li>
+                <li><a href="" title="" class="ell db"><span class="dib pr5">5.</span>热门文章热门文章热门文章</a></li>
+                <li><a href="" title="" class="ell db"><span class="dib pr5">6.</span>热门文章热门文章热门文章</a></li>
+            </ul>
+        </div>
+        <!--广告-->
+        <div class="ad mt10">
+            <a href="" title="" class="db mb10" target="_blank"><img src="../../../images/ad1.png" alt=""></a>
+            <a href="" title="" class="db mb10" target="_blank"><img src="../../../images/ad2.png" alt=""></a>
+            <a href="" title="" class="db mb10" target="_blank"><img src="../../../images/ad3.png" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<!--脚部-->
+<div id="footer" class="mt30">
+    <div class="footer-outer w100">
+        <div class="footer-box com-width mao fix">
+            <img class="footer-logo fl" src="../../../images/site_logo.png" alt="出国风">
+
+            <div class="about-us fl fix">
+                <ul class="fl mr35">
+                    <li class="tit bo-line b">出国风特色</li>
+                    <li><a href="" class="">产品与服务</a></li>
+                </ul>
+                <ul class="fl mr35">
+                    <li class="tit bo-line b">帮助中心</li>
+                    <li><a href="" class="">找回密码</a></li>
+                    <li><a href="" class="">新手教程</a></li>
+                    <li><a href="" class="">友情链接</a></li>
+                </ul>
+                <ul class="fl mr35">
+                    <li class="tit bo-line b">关于我们</li>
+                    <li><a href="" class="">出国风简介</a></li>
+                    <li><a href="" class="">联系我们</a></li>
+                    <li><a href="" class="">企业文化</a></li>
+                    <li><a href="" class="">人才招聘</a></li>
+                </ul>
+                <ul class="fl mr35">
+                    <li class="tit bo-line b">常见问题</li>
+                    <li><a href="" class="">公司注册</a></li>
+                    <li><a href="" class="">一键匹配</a></li>
+                    <li><a href="" class="">点评报告</a></li>
+                </ul>
+                <ul class="fl service">
+                    <li class="tit bo-line b">客服热线（工作时间 8:00 - 22:00）</li>
+                    <li class="tel b">400&nbsp;&nbsp;9677&nbsp;&nbsp;360</li>
+                    <li class="b">客服邮箱<a href="" class="b">KF@chuguofeng.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright tc com-width mao">
+            Copyright 2014 www.chuguofeng.com All Rights Reserved
+            <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备14095256号</a>
+            版权所有 深圳深海投网络科技有限公司
+        </div>
+    </div>
+</div>
+
+<!--用来处理弹出框弹出后页面元素不可点-->
+<div class="black_overlay"></div>
+<script>
+    $(function () {
+        $(".r-arr").toggle(function () {
+            $(this).find("i").css({
+                "border-top": "6px solid transparent",
+                "border-bottom": "6px solid  transparent",
+                "border-left": "6px solid #c1c1c1",
+                "top": "-6px"
+            });
+            $(this).parent().find("ul").slideUp();
+        }, function () {
+            $(this).find("i").css({
+                "border-left": "6px solid transparent",
+                "border-right": "6px solid  transparent",
+                "border-top": "6px solid #c1c1c1",
+                "top": "-5px"
+            });
+            $(this).parent().find("ul").slideDown();
+        });
+
+        tabSwitch(".tab li", "tab-selected", ".tab-box");
+        tabSwitch(".tab2 li", "tab2-selected", ".tabs");
+        $(".table tr").hover(function () {
+
+            if ($(this).index() != 0) {
+                $(this).animate({background: '#000'}, 300);
+            }
+        }, function () {
+            $(this).animate({background: '#fff'}, 300);
+        });
+
+        $(".con-authorize").click(function () {
+            $("#add-consultant").hide();
+            $("#deal-project").show();
+        });
+
+        $(".con-apply").click(function () {
+            $("#add-consultant").show();
+            $("#deal-project").hide();
+        });
+
+        //添加顾问modal
+        $("#add-consultant").click(function () {
+            $(".add-consultant").show();
+            $(".black_overlay").show();
+        });
+
+        //关闭添加顾问
+        $(".close").click(function () {
+            $(".add-consultant,.deal-project").hide();
+            $(".black_overlay").hide();
+        });
+
+        //分配项目modal
+        $("#deal-project").click(function () {
+            getProList();
+            $(".deal-project").show();
+            $(".black_overlay").show();
+        });
+
+        var $isConView = false;
+
+        //获取项目列表
+        function getProList() {
+            //项目列表
+            var pro_list = [
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '意大利移民送房产',
+                    time: '2015-10-10 12:00',
+                    company: '苏州奥星移民有限公司'
+                },
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '塞浦路斯移民送房产',
+                    time: '2015-12-10 12:00',
+                    company: '苏州奥星移民有限公司'
+                },
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '泰国斯移民送房产',
+                    time: '2015-8-10 12:00',
+                    company: '苏州奥星移民有限公司'
+                }
+            ];
+
+            var str = '';
+            $.each(pro_list, function (index, item) {
+
+                str += "<div class='block cup mt5 p5 project-list'>" +
+                        "<img style='width: 65px;' class='dib' src='../../../images/head_pic.png'/>" +
+                        "<div class='dib ml10'>" +
+                        "<div class='b f16'>" + item.name + "</div>" +
+                        "<div>" + item.time + "</div>" +
+                        "<div>" + item.company + "</div>" +
+                        "</div>" +
+                        "<div class='pro-checkbox fr vt mr10 mt30 dn'>" +
+                        "<input class='checkbox' type='checkbox'/>" + "</div></div>";
+
+            });
+            $(".project-info").empty().append(str);
+            $(".project-list").click(function () {
+                if ($isConView === false) {
+                    // if (isFrist) {
+                    getConList();
+                    //    isFrist = false;
+                    // }
+                    $(".con-checkbox").show();
+                    $(this).addClass("project-hover").siblings(".project ,.project-list").removeClass("project-hover");
+                } else {
+                    $(this).toggleClass("project-hover");
+                    $(".con-checkbox").hide();
+                    if ($(this).attr('class').length === 43) {
+                        $(this).find(".checkbox").attr('checked', true);
+                    } else {
+                        $(this).find(".checkbox").attr('checked', false);
+                    }
+                    //todo send ajax
+                    var con_info = $(".con-view").find(".consultant-hover").text();
+                    var pro_info = $(this).text();
+                    console.log("pro-view--->", con_info, pro_info);
+                }
+            });
+        }
+
+        //获取顾问人员列表
+        function getConList() {
+            //顾问列表
+            var con_list = [
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '张三',
+                    phone: '15112418877'
+                },
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '李四',
+                    phone: '15912418877'
+                },
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '王五',
+                    phone: '15812418877'
+                },
+                {
+                    icon: '../../../images/head_pic.png',
+                    name: '小六',
+                    phone: '15812418877'
+                }
+            ];
+
+            var str = '';
+            $.each(con_list, function (index, item) {
+                str += "<div class='consultant-list block cup mt5 p5'>" +
+                        "<img style='width: 45px;' class='dib' src='../../../images/head_pic.png'/>" +
+                        "<div class='dib ml10 vt'>" +
+                        "<div class='b f16'>" + item.name + "</div>" +
+                        "<div>" + item.phone + "</div>" +
+                        "</div>" +
+                        "<div class='con-checkbox fr vt mr10 mt15 dn'>" +
+                        "<input class='checkbox' type='checkbox'/>" + "</div></div>";
+            });
+            $(".consultant-info").empty().append(str);
+
+            $(".consultant-list").click(function () {
+                if ($isConView === false) {
+                    $(".pro-checkbox").hide();
+                    $(this).toggleClass("consultant-hover");
+                    if ($(this).attr('class').length === 49) {
+                        $(this).find(".checkbox").attr('checked', true);
+                    } else {
+                        $(this).find(".checkbox").attr('checked', false);
+                    }
+                    //todo send ajax;
+                    var pro_info = $(".pro-view").find(".project-hover").text();
+                    var con_info = $(this).text();
+                    console.log("con-view--->", pro_info, con_info);
+                } else {
+                    getProList();
+                    $(".pro-checkbox").show();
+                    $(this).addClass("consultant-hover").siblings(".consultant ,.consultant-list").removeClass("consultant-hover");
+                }
+            });
+        }
+
+        //切换到项目视角
+        $("#pro").click(function () {
+            $(".pro-view").find(".project-hover").removeClass("project-hover");
+            $(".pro-view").find(".consultant-hover").removeClass("consultant-hover");
+            $(".consultant-list").hide();
+            $(".project-list").show();
+            $(".pro-checkbox").hide();
+            $isConView = false;
+        });
+
+        //切换到顾问视角
+        $("#con").click(function () {
+            getConList();
+            $(".con-view").find(".project-hover").removeClass("project-hover");
+            $(".con-view").find(".consultant-hover").removeClass("consultant-hover");
+            $(".project-list").hide();
+            $(".consultant-list").show();
+            $(".con-checkbox").hide();
+            $isConView = true;
+        });
+    });
+</script>
+</body>
+</html>
