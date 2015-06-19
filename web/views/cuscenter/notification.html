@@ -350,7 +350,6 @@
                 $(".uncheck-all").hide();
             }
         });
-
         //全选
         $(".check-all").click(function () {
             $(this).hide();
@@ -400,8 +399,8 @@
             var str = "";
             $("input[name='user-name']:checked").each(function () {
                 str += "<span class='c-2e bg-e8'>" + $(this).val() +
-                        "<img class='del-user cup ml10' src='../../../images/icon-del.png'/>" +
-                        "</span>";
+                "<img class='del-user cup ml10' src='../../../images/icon-del.png'/>" +
+                "</span>";
             });
             $(".receiver").empty().append(str);
 
